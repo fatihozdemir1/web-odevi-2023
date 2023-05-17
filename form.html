@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Bilgileri</title>
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="anasayfa.html">Anasayfa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="Hakkımda.html">Hakkımda</a>
+                    <a class="nav-link" href="özgecmis.html">Özgeçmiş</a>
+                    <a class="nav-link" href="ilgialanlarım.html">İlgi Alanlarım</a>
+                    <a class="nav-link" href="sehir.html">Gezmek İstediğim Şehir </a>
+                    <a class="nav-link" href="mirasımız.html">Mirasımız </a>
+                    <a class="nav-link" href="iletisim.html">İletişim</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br><br><br>
+        <h2>Form Bilgileri Sayfasına Hoşgeldiniz</h2>
+
+        <br>
+
+        <h4>Ad:</h4>
+        <p id="demo"></p>
+
+        <h4>Soyad:</h4>
+        <p id="demo3"></p>
+
+        <h4>Email:</h4>
+        <p id="demo2"></p>
+
+        <h4>Mesaj:</h4>
+        <p id="demo4"></p>
+
+
+
+
+
+
+
+
+        <script type="text/javascript">
+            function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, '\\$&');
+                var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+
+            var sn = getParameterByName('name');
+            var sm = getParameterByName('surname');
+            var ss = getParameterByName('email');
+            var sk = getParameterByName('message');
+
+            var sq = getParameterByName('accept');
+            var sw = getParameterByName('inlineRadioOptions');
+
+            var x = getParameterByName('select');
+
+            document.write("<h4>Yaşadığı Şehir</h4>")
+            document.write(x);
+
+
+
+            document.getElementById("demo4").innerHTML = sk;
+            document.getElementById("demo2").innerHTML = ss;
+            document.getElementById("demo3").innerHTML = sm;
+            document.getElementById("demo").innerHTML = sn;
+
+
+
+
+            if (sq == "") {
+
+                document.write("<br><br><h4>Haber Almak İstiyorum</h4><br/>");
+                if (sw == "option1") {
+
+                    document.write("<h4>Cinsiyet:</h4>Kadın<br/>");
+
+
+                } else {
+
+                    document.write("<h4>Cinsiyet:</h4>Erkek<br/>")
+
+                }
+
+            } else {
+
+                document.write("<h4>Haber Almak İstemiyorum</h4><br/>");
+
+                if (sw == "option1") {
+
+                    document.write("<h4>Cinsiyet:</h4>Kadın<br/>");
+
+
+                } else {
+
+                    document.write("<h4>Cinsiyet:</h4>Erkek<br/>")
+
+                }
+            }
+        </script>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
