@@ -1,0 +1,106 @@
+body{
+   
+background-image: url(img/back.jpg);
+   
+}
+h1,h2,h4{
+
+    font-style: oblique;
+
+}
+p{
+    font-size: 120%;
+    font-family: "Trebuchet MS";
+}
+
+.card{
+    margin-top: 10%;
+    
+
+}
+.card:hover{
+
+box-shadow:-1px 9px 40px rgba(0,0,0,0.75)
+    
+}
+.card-img-top{
+height: 220px;
+}
+.pokemonBox {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  
+  .pokemonBox img {
+    width: 200px;
+  }
+  
+  .pokemonBox p {
+    margin-top: 1rem;
+  }
+  
+  .pokemonBox .pokemonInfos {
+    padding: 2rem;
+  }
+  .searchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .searchBox input {
+    border-radius: 8px 0 0 8px;
+    border: 0;
+    outline: none;
+    height: 36px;
+    padding: 4px 16px;
+    background-color: white;
+    color: #000;
+  }
+  
+  .searchBox button {
+    border-radius: 0 8px 8px 0;
+    border: 0;
+    height: 36px;
+    padding: 4px 16px;
+    background-color: white;
+  }
+  button {
+    cursor: pointer;
+  }
+  
+  .btnortala {
+    margin-left: 40%;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  main {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .jumbotron{
+    padding-top: 75px;
+    position: relative;
+}
+.carousel-title{
+  text-decoration-color: black;
+
+
+}
+.login-page {
+
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #280137;
+  
+
+}
